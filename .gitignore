@@ -1,0 +1,14 @@
+# Entorno virtual
+venv/
+__pycache__/
+*.pyc
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Salida de vídeos
+*.mp4
+*.avi
+*.mov
+output/
