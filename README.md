@@ -381,17 +381,23 @@ python decode/moby_dick_rag.py
 ```
 video-steganography-youtube/
 ├── encode/
-│   ├── process_moby_dick.py           # Procesamiento del dataset
-│   ├── embed_with_adjustable_opacity.py # Embedding con opacidad variable
-│   ├── visual_debug.py                # Calibración de umbrales
-│   └── invisible_qr_video.py          # Embedding invisible
+│   ├── embed_with_adjustable_opacity.py           # embeber el texto al video con una determinada opacidad.
+│   ├── encode_qr_into_video.py                    # Guardar el codigo qr en el video.
+│   ├── invisible_qr_video.py                      # embeber el texto al video con una determinada opacidad.
+│   ├── progressive_opacity_test.py                # Un test para tratar de averiguar la opacidad adecuada.
+│   ├── process_moby_dick.py                       # Procesamiento del dataset
+│   ├── embed_with_adjustable_opacity.py           # Embedding con opacidad variable
+│   ├── visual_debug.py                            # Calibración de umbrales
+│   └── invisible_qr_video.py                      # Embedding invisible
 ├── decode/
-│   ├── calibrated_extractor.py        # Extractor con umbrales calibrados
-│   ├── opencv_qr_extractor.py         # Extractor OpenCV robusto
-│   └── debug_extraction.py            # Debug de detección
-├── requirements.txt                   # Dependencias Python
-├── moby_dick_embeddings.pkl.gz       # Dataset procesado
-└── README.md                          # Esta documentación
+│   ├── calibrated_extractor.py                    # Extractor con umbrales calibrados
+│   ├── create_visible_test.py                     # embeber el texto al video con una determinada opacidad.
+│   ├── moby_dick_rag.py                           # Un Rag muy específico que carga el embebido que se ha sacado del video.
+│   ├── opencv_qr_extractor.py                     # Extractor OpenCV robusto
+│   └── debug_extraction.py                        # Debug de detección
+├── requirements.txt                               # Dependencias Python
+├── moby_dick_embeddings.pkl.gz                    # Dataset procesado
+└── README.md                                      # Esta documentación
 ```
 
 ## 🎓 Aplicaciones Educativas
@@ -430,10 +436,10 @@ video-steganography-youtube/
 - [ ] **Benchmarking** con otras técnicas de esteganografía
 
 #### **Fase 2: Responsible Disclosure**
-- [ ] **Contacto inicial** con YouTube Security Team
-- [ ] **Reporte técnico** con detalles de implementación
-- [ ] **Demostración controlada** de la vulnerabilidad
-- [ ] **Propuesta de contramedidas** específicas
+- [x] **Contacto inicial** con YouTube Security Team
+- [x] **Reporte técnico** con detalles de implementación
+- [x] **Demostración controlada** de la vulnerabilidad
+- [x] **Propuesta de contramedidas** específicas
 
 #### **Fase 3: Desarrollo de Contramedidas**
 - [ ] **Herramientas de detección** para plataformas
@@ -564,3 +570,8 @@ humano-IA avanzada. El equipo investigador no se responsabiliza por el uso indeb
 La contribución de asistentes de IA (Claude y ChatGPT) bajo dirección humana representa un nuevo paradigma en 
 investigación científica colaborativa.
 
+**Añadido investigación previa para embeber texto en un fichero PNG**
+
+https://github.com/alonsoir/sturdy-octo-parakeet/blob/master/8_7_exfiltracion_esteganografia/info_hidder.py
+
+En el fichero jamesWebb.jpeg están las instrucciones para ejecutar la demo.
