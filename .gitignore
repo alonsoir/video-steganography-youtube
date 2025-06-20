@@ -8,13 +8,4 @@ __pycache__/
 *.tmp
 
 # Salida de vídeos
-*.mp4
-*.avi
-*.mov
 output/
-
-# ficheros de imágenes
-*.png
-
-# ficheros con embbedings
-*.pkl.gz

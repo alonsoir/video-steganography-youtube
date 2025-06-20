@@ -550,6 +550,11 @@ El equipo humano-IA continuará colaborando en:
 - **Publicación académica** con documentación rigurosa
 - **Herramientas abiertas** para la comunidad de seguridad
 
+-** He grabado un video con asciinema reproduciendo el problema.
+
+  ┌<▸> ~/g/video-steganography-youtube 
+  └➤ asciinema play google_security_demo.cast
+
 ---
 
 **📊 Estado del Proyecto:** ✅ **INVESTIGACIÓN COMPLETADA** - Vulnerabilidad Demostrada
