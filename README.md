@@ -441,6 +441,8 @@ video-steganography-youtube/
 - [x] **Demostración controlada** de la vulnerabilidad
 - [x] **Propuesta de contramedidas** específicas
 
+    Tracker asignado por el sistema de google para la incidencia: https://issuetracker.google.com/issues/424719707?pli=1
+
 #### **Fase 3: Desarrollo de Contramedidas**
 - [ ] **Herramientas de detección** para plataformas
 - [ ] **Análisis estadístico** automatizado de patrones
@@ -486,6 +488,10 @@ permite:
 - **Violación de IP**: Distribución no autorizada de propiedad intelectual
 - **Comunicaciones internas**: Canal encubierto para filtración de información
 - **Auditoría necesaria**: Monitoreo de contenido multimedia saliente
+- **Bastaría que al actor malicioso creara un video malicioso embebido con la información confidencial a sustraer y
+- luego subiera el video en estado privado a Youtube o a cualquier otro proveedor de video on demmand.
+- La extraccion de la información confidencial es trivial teniendo el video embebido en la red usando luego técnicas RAG
+- , con instrucciones precisas para extraerlo.
 
 ## 👥 Equipo de Investigación
 
